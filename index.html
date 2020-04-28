@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio i-Fifteen</title>
+    <meta charset=utf-8>
+    <meta name=description content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS owner-->
+    <link rel="stylesheet" type="text/css" href="Mainpage.css">
+    <link rel="stylesheet" type="text/css" href="Mainpage_responsive.css">
+    <!-- font from website -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="heading">
+        <div class="container">
+            <div class="header-left">
+                <a href="#top">
+                    <img class="logo" src="./Assets/Logo.png">
+            </div>
+            <!-- Fa-fa icon for responsive -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <span class="fa fa-bars fa-2x menu-icon"></span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#IDAbout_Us">ABOUT</a>
+                    <a href="#IDcontact_Us">CONTACT</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="#IDAbout_Us">ABOUT</a>
+                <a href="#IDcontact_Us">CONTACT</a>
+            </div>
+        </div>
+    </header>
+    <div class="tabMainpage" id="IDMain_Page">
+        <div class="container">
+            <h1>Welcome, For The Good Future With Us.</h1>
+            <h2>I- FIFTEEN</h2>
+            <br><br>
+            <a href="#IDAbout_Us" class="Arrow">
+                <i class="fa fa-angle-double-down animated fa-4x" id="slidedown"></i>
+            </a>
+        </div>
+    </div>
+    <div class="tabAbout" id="IDAbout_Us">
+        <div class="container">
+            <div class="Title">
+                <h2>About US</h2>
+            </div>
+            <div class="row1">
+                <div class="col1">
+                    <div class="Icons">
+                        <img src="Assets/Foto/SholahulFajri.jpg">
+                        <h3>Sholahul Fajri</h3>
+                    </div>
+                    <h4 class="txt-contents">Full-Stack Developer</h4>
+                </div>
+                <div class="col1">
+                    <div class="Icons">
+                        <img src="Assets/Foto/b.png">
+                        <h3>Rohmad Adam Mas'ud</h3>
+                    </div>
+                    <h4 class="txt-contents">Database Analis</h4>
+                </div>
+                <div class="col1">
+                    <div class="Icons">
+                        <img src="Assets/Foto/sutrisno.jpg">
+                        <h3>Sutrisno</h3>
+                    </div>
+                    <h4 class="txt-contents">Front-End Developers</h4>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="row2">
+                <div class="col2">
+                    <div class="Icons">
+                        <img src="Assets/Foto/singgih.JPG">
+                        <h3>Singgih Prabowo</h3>
+                    </div>
+                    <h4 class="txt-contents">Database Engineers</h4>
+                </div>
+                <div class="col2">
+                    <div class="Icons">
+                        <img src="Assets/Foto/surya.JPG">
+                        <h3>Surya Kaur Saputra</h3>
+                    </div>
+                    <h4 class="txt-contents">Quality Assurance</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabContact" id="IDcontact_Us">
+        <div class="container">
+            <div class="Title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="container-form">
+                <form action="">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        Copyright &copy; I-FIFTEEN 2020
+    </footer>
+    <script type="text/javascript" src="Mainpage.js"></script>
+</body>
+
+</html>
