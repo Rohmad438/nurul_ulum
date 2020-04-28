@@ -1,0 +1,261 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'ubuntu', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/*Header*/
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#heading{
+  background-color: transparent;
+}
+
+header {
+  padding-top: 20px;
+  height: 70px;
+  width: 100%;
+  position :fixed;
+  z-index: 10;
+  font-weight: bold;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 0px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon{
+  display: none;
+  color: transparent;
+  float: right;
+}
+
+.dropbtn, .dropdown{
+  display: none;
+}
+
+/*TAB MAINPAGE*/
+.tabMainpage {
+  background-image: url(./Assets/BackgroundMainpage.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding-top : 120px;
+  padding-bottom: 50px;
+  height: 500px;  
+  width: 100%;
+}
+
+.tabMainpage h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  padding-top: 12%;
+}
+
+.tabMainpage h2{
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  position: center;
+}
+
+.tabMainpage p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.Arrow{
+  position: relative;
+  animation: myfirst 5s linear 1s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {color:red; bottom:0px; top:0px;}
+  50%  {color:blue; bottom:50px; top:50px;}
+  100% {color:red; bottom:0px; top:0px;}
+}
+
+
+
+/*TAB ABOUT*/
+.tabAbout {
+  background-image: url(./Assets/BackgroundAbout.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 700px;  
+  padding-top : 70px;
+  padding-bottom: 80px;  
+}
+
+.Title{
+  color: white;
+  text-decoration: underline;
+}
+
+.row1{
+  color: white;
+}
+
+.row2{
+  color: white;
+}
+
+
+.col1 {
+  float: left;
+  width: 33.3%;
+}
+
+.col2{
+  float: left;
+  width: 50%; 
+}
+
+.Icons {
+  position: relative;
+}
+
+.Icons img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.Icons h3 {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 100%;
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+
+/*TAB CONTACT*/
+.tabContact {
+  background-image: url(./Assets/BackgroundContact.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 500px;  
+  padding-top : 70px;
+  padding-bottom: 50px;
+  color:white;
+  font-weight: bold;
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  
+}
+
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: black;
+  float: left;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*FOOTER*/
+footer {
+  background-size: 100% 100%;
+  font-size: 14px;
+  text-align:center;
+  background-color: rgb(4,54,149);
+  color : white;
+  height: 25px;
+  padding: 15px;
+  font-weight: bold;
+}
+
